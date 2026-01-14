@@ -15,7 +15,7 @@ interface ChatWindowProps {
   showBackButton?: boolean;
 }
 
-export function ChatWindow({ chat, onBack, showBackButton }: ChatWindowProps) {
+export default function ChatWindow({ chat, onBack, showBackButton }: ChatWindowProps) {
   const [messages, setMessages] = useState<Message[]>([]);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 

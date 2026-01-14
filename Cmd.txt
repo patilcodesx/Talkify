@@ -1,0 +1,18 @@
+Get-ChildItem -Recurse -File |
+Where-Object {
+    $_.Extension -in @(
+        ".ts",".tsx",".js",".jsx",
+        ".json",".html",".md",".css"
+    ) -or
+    $_.Name -match "config\.(js|ts)$"
+} |
+Where-Object { $_.FullName -notmatch "node_modules" } |
+ForEach-Object {
+    "===== FILE: $($_.FullName) ====="
+    Get-Content -Path $_.FullName
+    "`n"
+} > frontend_all_code.txt
+
+
+
+tree /F /A > structure.txt

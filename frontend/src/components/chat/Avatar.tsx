@@ -22,7 +22,7 @@ const statusSizeClasses = {
   xl: 'w-4 h-4 border-2',
 };
 
-export function Avatar({ src, alt, size = 'md', status, className }: AvatarProps) {
+export  function Avatar({ src, alt, size = 'md', status, className }: AvatarProps) {
   return (
     <div className={cn('relative flex-shrink-0', className)}>
       <img

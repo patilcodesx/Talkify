@@ -32,7 +32,7 @@ interface SidebarProps {
   className?: string;
 }
 
-export function Sidebar({
+export default function Sidebar({
   currentUser,
   chats,
   activeChat,
