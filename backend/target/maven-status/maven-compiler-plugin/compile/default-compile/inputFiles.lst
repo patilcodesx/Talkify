@@ -1,0 +1,17 @@
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\user\UserRepository.java
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\auth\dto\LoginResponse.java
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\user\UserEntity.java
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\config\SwaggerConfig.java
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\config\CorsConfig.java
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\message\MessageController.java
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\user\UserController.java
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\websocket\ChatSocketController.java
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\notification\NotificationService.java
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\chat\ChatRoom.java
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\auth\dto\LoginRequest.java
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\config\WebSocketConfig.java
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\TalkifyApplication.java
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\security\SecurityConfig.java
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\auth\AuthController.java
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\common\ApiResponse.java
+S:\IdeaProjects\Talkify\backend\src\main\java\com\talkify\message\MessageEntity.java
