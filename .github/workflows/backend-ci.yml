@@ -2,9 +2,11 @@ name: Talkify Backend CI
 
 on:
   push:
-    branches: [ main, bhavesh ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - main
+      - bhavesh
+    paths:
+      - "backend/**"
 
 jobs:
   backend-ci:
@@ -17,18 +19,9 @@ jobs:
       - name: Set up Java 17
         uses: actions/setup-java@v4
         with:
-          distribution: temurin
-          java-version: 17
-
-      - name: Cache Maven dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-maven-${{ hashFiles('backend/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maven-
+          distribution: "temurin"
+          java-version: "17"
 
       - name: Build backend
-        run: |
-          cd backend
-          mvn clean package -DskipTests
+        working-directory: backend
+        run: mvn clean install -DskipTests
