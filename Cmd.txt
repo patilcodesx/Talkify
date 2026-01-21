@@ -16,3 +16,10 @@ ForEach-Object {
 
 
 tree /F /A > structure.txt
+
+
+
+
+
+//backend
+find . -type f \( -name "*.java" -o -name "*.properties" -o -name "*.yml" -o -name "*.yaml" -o -name "*.xml" \) -exec echo "===============================" \; -exec echo "FILE: {}" \; -exec echo "===============================" \; -exec cat {} \; >> springboot_code.txt

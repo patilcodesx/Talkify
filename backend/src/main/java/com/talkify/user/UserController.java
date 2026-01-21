@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.talkify.auth.dto.UserResponse;
+
 import java.util.List;
 
 @RestController
@@ -17,8 +19,15 @@ public class UserController {
         this.repository = repository;
     }
 
-    @GetMapping
-    public List<UserEntity> getAllUsers(){
-        return repository.findAll();
-    }
+   @GetMapping
+public List<UserResponse> getAllUsers() {
+    return repository.findAll()
+            .stream()
+            .map(u -> new UserResponse(
+                    u.getId(),
+                    u.getEmail(),
+                    u.getUsername()))
+            .toList();
+}
+
 }
