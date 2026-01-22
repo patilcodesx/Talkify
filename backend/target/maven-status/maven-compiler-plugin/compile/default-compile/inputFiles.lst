@@ -1,4 +1,5 @@
 /home/lab2/Postman/files/Talkify/backend/src/main/java/com/talkify/notification/NotificationService.java
+/home/lab2/Postman/files/Talkify/backend/src/main/java/com/talkify/auth/dto/UserResponse.java
 /home/lab2/Postman/files/Talkify/backend/src/main/java/com/talkify/message/MessageController.java
 /home/lab2/Postman/files/Talkify/backend/src/main/java/com/talkify/TalkifyApplication.java
 /home/lab2/Postman/files/Talkify/backend/src/main/java/com/talkify/user/UserRepository.java
@@ -14,6 +15,7 @@
 /home/lab2/Postman/files/Talkify/backend/src/main/java/com/talkify/message/MessageEntity.java
 /home/lab2/Postman/files/Talkify/backend/src/main/java/com/talkify/websocket/ChatSocketController.java
 /home/lab2/Postman/files/Talkify/backend/src/main/java/com/talkify/chat/ChatRoom.java
+/home/lab2/Postman/files/Talkify/backend/src/main/java/com/talkify/common/GlobalExceptionHandler.java
 /home/lab2/Postman/files/Talkify/backend/src/main/java/com/talkify/security/SecurityConfig.java
 /home/lab2/Postman/files/Talkify/backend/src/main/java/com/talkify/user/UserController.java
 /home/lab2/Postman/files/Talkify/backend/src/main/java/com/talkify/auth/dto/LoginRequest.java
